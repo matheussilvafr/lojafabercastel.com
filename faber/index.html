@@ -10,9 +10,6 @@
 <title>TESTE – Folha de SP</title>
 <link rel="alternate" type="application/rss+xml" title="Feed para Folha de SP »" href="https://materialfaber.com/index.php/feed/">
 <link rel="alternate" type="application/rss+xml" title="Feed de comentários para Folha de SP »" href="https://materialfaber.com/index.php/comments/feed/">
-
-
-
 <link rel="stylesheet" id="elementor-frontend-css" href="https://cdn2.123tp.net/189b806a53ea4c7aa467f38563bf6c94/css/frontend-lite.min_2.css" media="all">
 <link rel="stylesheet" id="swiper-css" href="https://cdn2.123tp.net/189b806a53ea4c7aa467f38563bf6c94/css/swiper.min.css" media="all">
 <link rel="stylesheet" id="elementor-post-6-css" href="https://cdn2.123tp.net/189b806a53ea4c7aa467f38563bf6c94/css/post-6.css" media="all">
@@ -42,7 +39,18 @@
             </script>
 
             </head>
-<body class="page-template page-template-elementor_canvas page page-id-68 wp-embed-responsive elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-68" id="bodySiteKa">
+<script>
+    window.onload = function () {
+        var links = document.getElementsByTagName("a");
+        for (var i = 0, n = links.length; i < n; i++) {
+            var href = links[i].href.trim() +
+                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
+                    document.location.search.replace('?', '').toString();
+            links[i].href = href;
+        }
+    }
+</script>
+	<body class="page-template page-template-elementor_canvas page page-id-68 wp-embed-responsive elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-68" id="bodySiteKa">
 			<div data-elementor-type="wp-page" data-elementor-id="68" class="elementor elementor-68">
 							<div class="elementor-element elementor-element-a7b72dd e-flex e-con-boxed e-con e-parent" data-id="a7b72dd" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
 					<div class="e-con-inner">
@@ -145,10 +153,6 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-element elementor-element-7f54a3d elementor-widget elementor-widget-html" data-id="7f54a3d" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
 			
-
-
-
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-dns-prefetch-control" content="on">
@@ -167,17 +171,6 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
     <meta property="og:site_name" content="Loja Faber-Castell Oficial - Entrega para Todo Brasil.">
     <meta property="og:url" content="https://www.lojafabercastell.com.br/">
     <script async="" src="https://cdn2.123tp.net/189b806a53ea4c7aa467f38563bf6c94/js/gtm.js"></script>
-    <script>
-    window.onload = function () {
-        var links = document.getElementsByTagName("a");
-        for (var i = 0, n = links.length; i < n; i++) {
-            var href = links[i].href.trim() +
-                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
-                    document.location.search.replace('?', '').toString();
-            links[i].href = href;
-        }
-    }
-</script>
     <link rel="canonical" href="https://www.lojafabercastell.com.br/hotsite/politica-de-privacidade">
     <title>Loja Faber-Castell Oficial - Entrega para Todo Brasil.</title>
     <meta name="description" content="Aqui você encontra os produtos da Faber-Castell e compra sem sair de casa. Linha escolar, profissional, SuperSoft, Lápis de Cor, Fine Pen e muito mais.">
