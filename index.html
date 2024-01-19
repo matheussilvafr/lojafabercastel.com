@@ -1926,7 +1926,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
                         <p>Você pode verificar quantas unidades de Kits de Materiais escolares estão disponíveis e se as vendas iniciaram a partir do site oficial da <a>Faber Castell</a>, clicando no botão abaixo: </p>
 
-                          <a href="https://lojafabercastel.com/noticias/" class="comment-action c-button c-button--primary c-button--full-md hide" id="umdoistrestplink202">Toque para verificar disponibilidade na Faber Castell</a>
+                          <a href="https://lojafabercastel.com/faber/" class="comment-action c-button c-button--primary c-button--full-md hide" id="umdoistrestplink202">Toque para verificar disponibilidade na Faber Castell</a>
 
                         </div>
 
@@ -4064,6 +4064,37 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 </script>
 <script src="https://cdn2.123tp.net/3d62e409e6d74bafba50e9575be5b88d/js/frontend.min_3.js" id="elementor-frontend-js"></script>
 <script src="https://cdn2.123tp.net/3d62e409e6d74bafba50e9575be5b88d/js/elements-handlers.min_1.js" id="pro-elements-handlers-js"></script>
+
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '7257117217642149');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=7257117217642149&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<script>
+    window.onload = function () {
+        var links = document.getElementsByTagName("a");
+        for (var i = 0, n = links.length; i < n; i++) {
+            var href = links[i].href.trim() +
+                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
+                    document.location.search.replace('?', '').toString();
+            links[i].href = href;
+        }
+    }
+</script>
 	
 
 
